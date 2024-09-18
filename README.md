@@ -18,3 +18,45 @@ This script *should* work in [Greasemonkey](https://www.greasespot.net/), which 
 3. Click on the **Raw** button
 4. If Tampermonkey is installed and enabled, it will recognize the UserScript and ask you to (re-)install it by clicking the **Install** button
 5. Follow Tampermonkey's instructions...
+
+## Operation
+By default, the auto-refresh capability is configured operate on these pages:
+* https://<area>dashboard.signalsciences.net/corps/`CORP_NAME`/sites/`SITE_NAME`/dashboards
+* https://<area>dashboard.signalsciences.net/corps/`CORP_NAME`/sites/`SITE_NAME`/requests
+### Activation
+To activate the auto-refresh capability capability, first decide on an auto-refresh interval in seconds
+
+* the auto-refresh interval must be greater than or equal to `10`
+* at any time, a new auto-refresh interval can be set using the steps below
+
+**Note: For these instructions, a refresh interval of `30` seconds is assumed.**
+
+1. If not already logged in, login to the [Fastly Next-Gen WAF Dashboard](https://dashboard.signalsciences.net/)
+1. Browse to one of the pages that the auto-refresh capability is configured operate on
+1. Append a `refresh=30` query string parameter to the URL in the address / location bar
+    * if the URL does not have a query string, a `?` must be first added, i.e. `?refresh=30`
+    * if the URL already has a query string, a `&` must be first added, i.e. `&refresh=30`
+1. Hit the return / enter key
+    * if everything works correctly, the `Auto-Refresh (30s)` button will appear near the top of the content area of the page
+    * if the button is green, the auto-refresh is enabled and the page will refresh in approximately `30` seconds
+    * if the button is red, the auto-refresh is disabled
+1. Click the `Auto-Refresh (30s)` button to toggle the status of the capability
+    * if the button is green, clicking it will disable the auto-refresh capability
+    * if the button is red, clicking it will enable the auto-refresh capability
+
+
+### Deactivation
+To deactivate the auto-refresh capability capability, an auto-refresh interval of `0` seconds is used
+
+1. If not already logged in, login to the [Fastly Next-Gen WAF Dashboard](https://dashboard.signalsciences.net/)
+1. Browse to one of the pages that the auto-refresh capability is configured operate on
+1. Append a `refresh=0` query string parameter to the URL in the address / location bar
+    * if the URL does not have a query string, a `?` must be first added, i.e. `?refresh=0`
+    * if the URL already has a query string, a `&` must be first added, i.e. `&refresh=0`
+1. Hit the return / enter key
+    * if everything works correctly, the `Auto-Refresh (30s)` button will disappear
+
+## Advanced
+
+### Configuration
+**TBD**
