@@ -20,9 +20,11 @@ This script *should* work in [Greasemonkey](https://www.greasespot.net/), which 
 5. Follow Tampermonkey's instructions...
 
 ## Operation
-By default, the auto-refresh capability is configured operate on these pages:
+By default, the auto-refresh capability is configured to operate on these pages:
 * https://<area>dashboard.signalsciences.net/corps/`CORP_NAME`/sites/`SITE_NAME`/dashboards
 * https://<area>dashboard.signalsciences.net/corps/`CORP_NAME`/sites/`SITE_NAME`/requests
+
+Additional pages can be added and the CSS-based location where the `Auto-Refresh (#s)` button is added can be modified.
 ### Activation
 To activate the auto-refresh capability capability, first decide on an auto-refresh interval in seconds
 
