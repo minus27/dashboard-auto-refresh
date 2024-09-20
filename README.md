@@ -3,7 +3,7 @@
 ## Overview
 This is a [Tampermonkey](https://tampermonkey.net/) script that was developed to add an auto-refresh capability to selected pages in the [Fastly Next-Gen WAF Dashboard](https://dashboard.signalsciences.net/) when using **Google Chrome**.
 While use of a different browser *should* not be a problem, usage of other **Tampermonkey**-like extensions/add-ons,
-e.g. [Greasemonkey](https://www.greasespot.net/), [Violentmonkey](https://violentmonkey.github.io/), and [FireMonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/,
+e.g. [Greasemonkey](https://www.greasespot.net/), [Violentmonkey](https://violentmonkey.github.io/), and [FireMonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/),
 is not recommended.
 These other ***monkeys** have not been tested and your mileage **will** vary.
 
