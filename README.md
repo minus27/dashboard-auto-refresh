@@ -1,14 +1,19 @@
 # dashboard-auto-refresh
 
 ## Overview
-This is a [Tampermonkey](https://tampermonkey.net/) script for Google Chrome that adds an auto-refresh capability to selected pages in the [Fastly Next-Gen WAF Dashboard](https://dashboard.signalsciences.net/).
-This script *should* work in [Greasemonkey](https://www.greasespot.net/), which is essentially Tampermonkey for other browsers, but it has not been tested, i.e. your mileage may vary.
+This is a [Tampermonkey](https://tampermonkey.net/) script that was developed to add an auto-refresh capability to selected pages in the [Fastly Next-Gen WAF Dashboard](https://dashboard.signalsciences.net/) when using **Google Chrome**.
+While use of a different browser *should* not be a problem, usage of other **Tampermonkey**-like extensions/add-ons,
+e.g. [Greasemonkey](https://www.greasespot.net/), [Violentmonkey](https://violentmonkey.github.io/), and [FireMonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/,
+is not recommended.
+These other ***monkeys** have not been tested and your mileage **will** vary.
 
 ---
-**Note: Never run a Tampermonkey/Greasemonkey script (including mine), or otherwise paste JavaScript code into your browser's address/location bar or Console, without first seeing what it is doing**
+**Note: Never run a Tampermonkey-like script (including mine), or otherwise paste JavaScript code into your browser's address/location bar or Console, unless you either trust the author or review it, with the latter being recommended**
 
 
 ## Installation
+*The following installation instructions presume use of* **Tampermonkey** *in* **Google Chrome** *.*
+
 1. If it is not installed already, install the **Tampermonkey Addon to Chrome** by doing the following:
     * Browse to the [Chrome Web Store](https://chromewebstore.google.com/) using Chrome
     * Search extensions and themes for `tampermonkey`
